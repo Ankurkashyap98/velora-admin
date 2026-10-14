@@ -577,8 +577,24 @@ function Dashboard({ signOut }) {
         </header>
 
         {error && (
-          <div className="notice">
-            Note: {error} (Displaying live records where available).
+          <div className="notice" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' }}>
+            <span>Note: {error} (Displaying live records where available).</span>
+            <button
+              onClick={signOut}
+              style={{
+                background: '#111111',
+                color: '#ffffff',
+                border: 'none',
+                padding: '6px 12px',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '12px',
+                fontWeight: '600',
+                whiteSpace: 'nowrap'
+              }}
+            >
+              Log in with Admin Credentials
+            </button>
           </div>
         )}
 
