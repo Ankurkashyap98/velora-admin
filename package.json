@@ -1,0 +1,1 @@
+{"name":"velora-shoes-admin","version":"1.0.0","type":"module","scripts":{"dev":"vite --port 5174","build":"vite build"},"dependencies":{"@vitejs/plugin-react":"latest","react":"latest","react-dom":"latest","react-icons":"latest","recharts":"latest"},"devDependencies":{"vite":"latest"}}
